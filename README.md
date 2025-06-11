@@ -360,5 +360,6 @@ Netbeans ή του Eclipse ως IDE.
 1. Ensure Node.js and npm are installed.
 2. From `backend/` run `npm install` and then `node server.js`.
 3. From `frontend/` run `npm install` and `npm start`.
-4. The backend expects a MySQL database named `workshop_management` (you can create it via phpMyAdmin in XAMPP). Update `backend/src/config/db.js` if your MySQL credentials differ.
+4. Edit `backend/.env` with your MySQL credentials (a placeholder file is provided).
+5. Ensure a MySQL database named `workshop_management` exists (create it via phpMyAdmin in XAMPP or `mysql`).
 

@@ -38,6 +38,24 @@ export default function App() {
   const [showWorks, setShowWorks] = useState(false);
   const [worksApptId, setWorksApptId] = useState(null);
 
+  // Sync view with browser history so back/forward buttons work
+  useEffect(() => {
+    const initial = window.location.hash.replace('#', '');
+    if (initial) {
+      setCurrentView(initial);
+    }
+    const onPop = (e) => {
+      const view = e.state?.view || window.location.hash.replace('#', '') || 'home';
+      setCurrentView(view);
+    };
+    window.addEventListener('popstate', onPop);
+    return () => window.removeEventListener('popstate', onPop);
+  }, []);
+
+  useEffect(() => {
+    window.history.pushState({ view: currentView }, '', `#${currentView}`);
+  }, [currentView]);
+
   // Load dashboard stats & lists when view or user changes
   useEffect(() => {
     if (!currentUser) return;
