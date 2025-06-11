@@ -355,3 +355,11 @@ Netbeans ή του Eclipse ως IDE.
 μορφοποίηση Excel ή PDF. Το ιστορικό ενός πελάτη θα πρέπει να περιλαμβάνει τα
 στοιχεία του πελάτη χωρίς όνομα χρήστη & κωδικό, τα αυτοκίνητά του και μια
 λίστα από όλα τα ραντεβού του, ανεξάρτητα της κατάστασής τους. 
+
+## Local Setup
+1. Ensure Node.js and npm are installed.
+2. From `backend/` run `npm install` and then `node server.js`.
+3. From `frontend/` run `npm install` and `npm start`.
+4. Copy `backend/.env.example` to `backend/.env` and update the values to match your MySQL setup. The server uses these variables for the database connection.
+5. Ensure a MySQL database named `workshop_management` exists (create it via phpMyAdmin in XAMPP or `mysql`).
+
