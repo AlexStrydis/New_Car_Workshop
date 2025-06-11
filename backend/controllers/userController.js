@@ -1,6 +1,6 @@
 // backend/src/controllers/userController.js
 
-const pool = require('../config/db');
+const pool = require('../src/config/db');
 const bcrypt = require('bcrypt');
 const fs = require('fs');
 const csv = require('csv-parser');

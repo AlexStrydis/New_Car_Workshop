@@ -1,6 +1,6 @@
 // backend/src/controllers/authController.js
 
-const pool = require('../config/db');
+const pool = require('../src/config/db');
 const bcrypt = require('bcrypt');
 const { validateEmail } = require('../utils/validators');
 

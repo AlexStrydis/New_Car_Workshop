@@ -1,6 +1,6 @@
 // backend/src/controllers/customerController.js
 
-const pool = require('../config/db');
+const pool = require('../src/config/db');
 
 // Helper to escape CSV values
 function escapeCsvValue(v) {

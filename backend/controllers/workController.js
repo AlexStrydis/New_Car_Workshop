@@ -1,6 +1,6 @@
 // backend/src/controllers/workController.js
 
-const pool = require('../config/db');
+const pool = require('../src/config/db');
 
 exports.addWork = async (req, res) => {
   const appointmentId = parseInt(req.params.id, 10);

@@ -1,6 +1,6 @@
 // backend/src/controllers/carController.js
 
-const pool = require('../config/db');
+const pool = require('../src/config/db');
 const fs = require('fs');
 const csv = require('csv-parser');
 

@@ -1,6 +1,6 @@
 // backend/src/controllers/statsController.js
 
-const pool = require('../config/db');
+const pool = require('../src/config/db');
 
 exports.getDashboardStats = async (req, res) => {
   try {

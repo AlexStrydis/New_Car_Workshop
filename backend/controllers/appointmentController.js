@@ -1,6 +1,6 @@
 // backend/src/controllers/appointmentController.js
 
-const pool = require('../config/db');
+const pool = require('../src/config/db');
 
 exports.getAppointments = async (req, res) => {
   const { date, status, customerId } = req.query;
