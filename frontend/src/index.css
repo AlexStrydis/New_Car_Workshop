@@ -1,0 +1,12 @@
+/* frontend/src/index.css */
+
+/* Tailwind CSS base, components, utilities */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global overrides or custom styles can go here */
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
